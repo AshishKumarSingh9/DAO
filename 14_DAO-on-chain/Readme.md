@@ -14,9 +14,19 @@ This project has 4 smart contracts written in solidity, viz. Box, GovernanceToke
 
 <br>
 
-## Compilation
+## Install Dependencies
 
-### npx hardhat compile
+```
+npm i
+```
+
+<br>
+
+## Contract Compilation
+
+```
+npx hardhat compile
+```
 
 <br>
 
@@ -24,9 +34,11 @@ This project has 4 smart contracts written in solidity, viz. Box, GovernanceToke
 
 A Hardhat Plugin For Replicable Deployments And Easy Testing. This creates a seperate folder for all the deploy scripts, and allows to deploy them on localhost network of Hardhat sequentially.
 
-### npm install --save-dev @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers
+```
+npm install --save-dev @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers
 
-### npm install --save-dev hardhat-deploy
+npm install --save-dev hardhat-deploy
+```
 
 <br>
 
@@ -46,20 +58,27 @@ export default func;
 
 ## Add Typescript support
 
-### npm install --save-dev typescript typechain ts-node @typechain/ethers-v5 @typechain/hardhat @types/chai @types/node
+```
+npm install --save-dev typescript typechain ts-node @typechain/ethers-v5 @typechain/hardhat @types/chai @types/node
+```
 
 ## Deploy on localhost for testing
 
-### npx hardhat deploy
+```
+npx hardhat deploy
+```
 
 ## Run Scripts
 
 -TESTING:
 
-### npx hardhat node
+```
+npx hardhat node
 
-### npx hardhat run scripts/propose.ts --network localhost
+npx hardhat run scripts/propose.ts --network localhost
 
-### npx hardhat run scripts/vote.ts --network localhost
+npx hardhat run scripts/vote.ts --network localhost
 
-### npx hardhat run scripts/queue-and-execute.ts --network localhost
+npx hardhat run scripts/queue-and-execute.ts --network localhost
+```
+
